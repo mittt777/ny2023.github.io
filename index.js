@@ -214,7 +214,7 @@ S.UI = (function () {
           break;
 
         default:
-          S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'What?' : current));
+          S.Shape.switchShape(S.ShapeBuilder.letter(current[0] === cmd ? 'I ❤ YOU' : current));
       }
     }, 2000, sequence.length);
   }
@@ -570,7 +570,7 @@ S.ShapeBuilder = (function () {
       };
 
       image.onerror = function () {
-        callback(S.ShapeBuilder.letter('What?'));
+        callback(S.ShapeBuilder.letter('I ❤ YOU'));
       }
 
       image.src = url;
